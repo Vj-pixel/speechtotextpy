@@ -40,14 +40,19 @@ while(1):
 
             # Corrected print statement
             print("Did you say:", MyText)
-            SpeakText(MyText)
+            #SpeakText(MyText)
             
-            if (MyText == "skibidi"):
-                SpeakText("That's not a nice word!")
+            #if (MyText == "skibidi"):
+                #SpeakText("That's not a nice word!")
                 
             if (MyText == "exit"):
                 SpeakText("Ok, bye bye!")
                 exit();
+                
+            if (MyText == "bye bye"):
+                SpeakText("Have a good day!")
+                exit();
+                
             
     except sr.RequestError as e:
         print(f"Could not request results; {e}")
